@@ -989,7 +989,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -1642,9 +1642,19 @@ MonoBehaviour:
   itemList: []
   myItemList: []
   curItemList: []
+  slots:
+  - {fileID: 1456890714}
+  - {fileID: 793096287}
+  - {fileID: 1123596038}
+  - {fileID: 1843060422}
   rBtn: {fileID: 1974516437}
   r2Btn: {fileID: 1031029425}
   curType: 
+  tabImage:
+  - {fileID: 1974516438}
+  - {fileID: 1031029426}
+  tabIdleSprite: {fileID: 1926677335, guid: 0a83596f4597b8b4cbcf809d84a8fcdb, type: 3}
+  tabSelectSprite: {fileID: -618230860, guid: 0a83596f4597b8b4cbcf809d84a8fcdb, type: 3}
 --- !u!4 &1837406579
 Transform:
   m_ObjectHideFlags: 0
@@ -1909,7 +1919,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 2
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}

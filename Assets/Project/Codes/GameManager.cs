@@ -35,6 +35,9 @@ public class GameManager : MonoBehaviour
 
     public string curType;
 
+    public Image[] tabImage;
+    public Sprite tabIdleSprite, tabSelectSprite;
+
     private void Start()
     {
         rBtn.onClick.AddListener(delegate { TapClick("Character"); });
@@ -63,6 +66,19 @@ public class GameManager : MonoBehaviour
         {
             slots[i].SetActive(i < curItemList.Count);
             slots[i].GetComponentInChildren<Text>().text = i < curItemList.Count ? curItemList[i].name : "";
+        }
+
+        int tabNum = 0;
+
+        switch (tabName)
+        {
+            case "Character": tabNum = 0; break;
+            case "Balloon": tabNum = 1; break;
+        }
+
+        for(int i = 0; i < tabImage.Length; i++)
+        {
+            tabImage[i].sprite = i == tabNum ? tabSelectSprite : tabIdleSprite;
         }
     }
 
